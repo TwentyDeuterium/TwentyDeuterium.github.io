@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-19T12:57:33.153Z</updated>
+  <updated>2021-08-20T01:08:33.977Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《西潮》摘抄</title>
+    <link href="http://example.com/2021/08/20/%E8%A5%BF%E6%BD%AE/"/>
+    <id>http://example.com/2021/08/20/%E8%A5%BF%E6%BD%AE/</id>
+    <published>2021-08-20T00:07:06.000Z</published>
+    <updated>2021-08-20T01:08:33.977Z</updated>
+    
+    <content type="html"><![CDATA[<p>&emsp;&emsp;中国既不是一个天神般万能的国家，也不是一个低能的毫无作为的国家。她是一群有感情、有思想的凡人结合而成的国家。中国没有解决一切困难的灵丹妙药，也没有随心所欲脱胎换骨的魔术。如果她已经有所成就的话，那也是<strong>平时以汗、战时以血</strong>换来的。</p><p>&nbsp;</p><p>&emsp;&emsp;基督教以<strong>和平仁爱</strong>为宗旨，要求教徒们遇到“有人掌掴你的右颊时，你就把左颊也凑过去。”</p><p>&nbsp;</p><p>&emsp;&emsp;科学和发明渐渐流传到了东方，先是涓涓滴滴地流注，接着汇为川流江涛，最后成为排山倒海的狂潮巨浪，泛滥整个东方，而且几乎终于把中国冲塌了。</p><p>&nbsp;</p><p>&emsp;&emsp;一般老百姓都是很老实的，人家说什么，他们就相信。迷信就是在这种背景上产生的，而且像滚雪球一样越滚越大，几百年积聚下来的迷信，当然是非常可观的了。</p><p>&nbsp;</p><p>&emsp;&emsp;<strong>理想、希望和意志</strong>可以说是决定一生荣枯的最重要因素。教育如果不能启发一个人的理想，希望和意志，单单强调学生的兴趣，那是舍本逐末的做法。只有以启发理想为主，培养兴趣为辅时，兴趣才能成为教育上的一个重要因素。</p><p>&nbsp;</p><p>&emsp;&emsp;每一个小孩子所具备的感受力、观察力、好奇心和理解力等等天赋，都可能被我童年所受的全凭记忆的传统训练所窒息。</p><p>&nbsp;</p><p>&emsp;&emsp;我还是像过去一样强于理解而不善于记忆，凡是<strong>合理的新观念</strong>我都乐于接受，对记忆中的旧观念则弃如敝屣。</p><p>&nbsp;</p><p>&emsp;&emsp;他们（外国人）在我的心目中已经成为新的神，原先心目中的神佛在我接受科学新知之后已经烟消云散了。但是有时候他们又像魔鬼，因为他们不可一世的神气以及巡捕手中得木棒使我害怕，外滩公园门口挂着一个牌子写着：“犬与华人不得入内”。犬居华人之上，这就很够人受的了……从某一边看，他是天使；从另一边看，他却是魔鬼。</p><p>&nbsp;</p><p>&emsp;&emsp;历史似乎包括一连串意外事件的，不合逻辑的推理和意想不到的结果。历史上的风云人物似乎不过是命运之神摆布的工具而已。</p><p>&nbsp;</p><p>&emsp;&emsp;忽然之间，强盗在实际生活中出现了，好像是老虎冲进你的居室，也像是鬼怪在你背后紧追不舍。最后<strong>我们所惧怕的</strong>是强盗，老虎和鬼怪<strong>却都被遗忘了</strong>。</p><p>&nbsp;</p><p>&emsp;&emsp;我在宗教方面一直是个不可知论者，我认为与其求死后灵魂的永恒，不如<strong>在今世奠立不朽的根基</strong>。这与儒家的基本观念刚好相符合。</p><p>&nbsp;</p><p>&emsp;&emsp;——摘自蒋梦麟《西潮》</p>]]></content>
+    
+    
+    <summary type="html">科学和发明渐渐流传到了东方，先是涓涓滴滴地流注，接着汇为川流江涛，最后成为排山倒海的狂潮巨浪，泛滥整个东方，而且几乎终于把中国冲塌了。</summary>
+    
+    
+    
+    <category term="Extract" scheme="http://example.com/categories/Extract/"/>
+    
+    
+    <category term="History" scheme="http://example.com/tags/History/"/>
+    
+    <category term="Culture" scheme="http://example.com/tags/Culture/"/>
+    
+  </entry>
   
   <entry>
     <title>《乱世佳人》摘抄</title>
@@ -35,9 +58,9 @@
     
     <category term="Love" scheme="http://example.com/tags/Love/"/>
     
-    <category term="Homeland" scheme="http://example.com/tags/Homeland/"/>
-    
     <category term="Growth" scheme="http://example.com/tags/Growth/"/>
+    
+    <category term="Homeland" scheme="http://example.com/tags/Homeland/"/>
     
     <category term="History" scheme="http://example.com/tags/History/"/>
     
