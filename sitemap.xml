@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lemonjing.cn/2021/08/24/%E5%A4%AA%E9%98%B3%E4%B8%8B%E7%9A%84%E9%A3%8E%E6%99%AF/</loc>
+    
+    <lastmod>2021-08-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lemonjing.cn/2021/08/22/%E5%BB%8A%E6%A1%A5%E9%81%97%E6%A2%A6/</loc>
     
     <lastmod>2021-08-22</lastmod>
@@ -109,7 +116,7 @@
 
   <url>
     <loc>https://lemonjing.cn/</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -117,63 +124,70 @@
   
   <url>
     <loc>https://lemonjing.cn/tags/Reading/</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lemonjing.cn/tags/Love/</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lemonjing.cn/tags/Growth/</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lemonjing.cn/tags/Homeland/</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lemonjing.cn/tags/History/</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lemonjing.cn/tags/Revolution/</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lemonjing.cn/tags/Politics/</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lemonjing.cn/tags/Literature/</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://lemonjing.cn/tags/Culture/</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-08-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lemonjing.cn/tags/Life/</loc>
+    <lastmod>2021-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -182,7 +196,7 @@
   
   <url>
     <loc>https://lemonjing.cn/categories/Extract/</loc>
-    <lastmod>2021-08-23</lastmod>
+    <lastmod>2021-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
