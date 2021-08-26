@@ -20,9 +20,25 @@
   <meta name="author" content="LemonJing">
   <meta name="keywords" content="">
   
-  <title>分类 - 京时录</title>
+  <title>leetcode797.DFS - 京时录</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -51,7 +67,7 @@
 
 
 <body>
-  <header style="height: 70vh;">
+  <header style="height: 80vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -145,18 +161,59 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/%E6%98%9F%E7%A9%BA3.jpg') no-repeat center center;
+         style="background: url('/img/cat.jpeg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Category">
+            <span class="h2" id="subtitle" title="leetcode797.DFS">
               
             </span>
 
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-08-25 20:54" pubdate>
+        2021年8月25日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      338 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      4
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
           </div>
 
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
           
         </div>
       </div>
@@ -165,138 +222,59 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">leetcode797.DFS</h1>
+            
+            <div class="markdown-body">
+              <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> &#123;</span><br><span class="hljs-keyword">public</span>:<span class="hljs-comment">//深度优先搜索</span><br>    vector&lt;vector&lt;<span class="hljs-keyword">int</span>&gt;&gt; res;<span class="hljs-comment">//结果要求呈现的二维数组</span><br>    vector&lt;<span class="hljs-keyword">int</span>&gt; stk;<span class="hljs-comment">//存储每一条结果的一维数组</span><br><br>    vector&lt;vector&lt;<span class="hljs-keyword">int</span>&gt;&gt; <span class="hljs-built_in">allPathsSourceTarget</span>(vector&lt;vector&lt;<span class="hljs-keyword">int</span>&gt;&gt;&amp; graph) <br>    &#123;<br>        stk.<span class="hljs-built_in">push_back</span>(<span class="hljs-number">0</span>);<span class="hljs-comment">//结果中必然含有起始点0，加入stk</span><br>        <span class="hljs-built_in">DFS</span>(graph, <span class="hljs-number">0</span>, graph.<span class="hljs-built_in">size</span>() - <span class="hljs-number">1</span>);<span class="hljs-comment">//调用深搜函数，传入二维数组（图），起点为0，终点为最后一个点</span><br>        <span class="hljs-keyword">return</span> res;<span class="hljs-comment">//返回得到的结果数组</span><br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">DFS</span><span class="hljs-params">(vector&lt;vector&lt;<span class="hljs-keyword">int</span>&gt;&gt; graph, <span class="hljs-keyword">int</span> begin, <span class="hljs-keyword">int</span> end)</span><span class="hljs-comment">//深搜函数，传入二维数组（图），搜索起点和搜索终点</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-keyword">if</span>(begin == end)<span class="hljs-comment">//起点与终点重合，搜索结束</span><br>            res.<span class="hljs-built_in">push_back</span>(stk);<span class="hljs-comment">//向结果数组中插入当前得到的一条结果</span><br>        <span class="hljs-keyword">else</span><span class="hljs-comment">//起点不与终点重合</span><br>        &#123;<br>            <span class="hljs-keyword">int</span> len = graph[begin].<span class="hljs-built_in">size</span>();<span class="hljs-comment">//遍历从起点可以到达的点</span><br>            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; len; i++)<br>                &#123;<br>                    stk.<span class="hljs-built_in">push_back</span>(graph[begin][i]);<span class="hljs-comment">//当前结果中加入可到达的下一个点</span><br>                    <span class="hljs-built_in">DFS</span>(graph, graph[begin][i], end);<span class="hljs-comment">//递归调用深搜函数，传入原来的二维数组（图），起点变为可到达的点，终点保持不变，最终要么得到一条符合题意的路径，要么没有得到</span><br>                    stk.<span class="hljs-built_in">pop_back</span>();<span class="hljs-comment">//无论如何，将可到达的下一个点弹出，以循环查找下一个点</span><br>                &#125;<br>        &#125;   <br>        <br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
 
 
-
-
-
-
-
-<div class="category-list">
-  
-  
-  
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-97478353818fc5590dc34b57b81a4b23" role="tab" data-toggle="collapse" href="#collapse-97478353818fc5590dc34b57b81a4b23"
-        aria-expanded="false"
-      >
-        Extract
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/Extract/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>11</span>
-      </a>
-      <div class="category-collapse">
-        
-        
-          
-  <div id="collapse-97478353818fc5590dc34b57b81a4b23" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-97478353818fc5590dc34b57b81a4b23">
-    
-    
-      
-      
-        <a href="/2021/08/26/%E6%B8%A9%E6%9A%96%E5%92%8C%E7%99%BE%E6%84%9F%E4%BA%A4%E9%9B%86%E7%9A%84%E6%97%85%E7%A8%8B/" class="list-group-item list-group-item-action">
-          <span class="category-post">《温暖和百感交集的旅程》摘抄</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/08/24/%E5%A4%AA%E9%98%B3%E4%B8%8B%E7%9A%84%E9%A3%8E%E6%99%AF/" class="list-group-item list-group-item-action">
-          <span class="category-post">《太阳下的风景》摘抄</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/08/22/%E5%BB%8A%E6%A1%A5%E9%81%97%E6%A2%A6/" class="list-group-item list-group-item-action">
-          <span class="category-post">《廊桥遗梦》摘抄</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/08/20/%E8%A5%BF%E6%BD%AE/" class="list-group-item list-group-item-action">
-          <span class="category-post">《西潮》摘抄</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/08/19/%E4%B9%B1%E4%B8%96%E4%BD%B3%E4%BA%BA/" class="list-group-item list-group-item-action">
-          <span class="category-post">《乱世佳人》摘抄</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/08/18/%E6%82%89%E8%BE%BE%E5%A4%9A/" class="list-group-item list-group-item-action">
-          <span class="category-post">《悉达多》摘抄</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/08/17/%E8%AE%BA%E6%97%B6%E4%BB%A3%E7%B2%BE%E7%A5%9E/" class="list-group-item list-group-item-action">
-          <span class="category-post">《论时代精神》摘抄</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/08/16/%E4%B8%80%E5%8D%83%E6%97%A0%E5%85%89%E4%B9%8B%E5%B9%B4/" class="list-group-item list-group-item-action">
-          <span class="category-post">《一千无光之年》摘抄</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/08/15/%E5%B8%83%E9%B2%81%E5%85%8B%E6%9E%97%E6%9C%89%E6%A3%B5%E6%A0%91/" class="list-group-item list-group-item-action">
-          <span class="category-post">《布鲁克林有棵树》摘抄</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/08/14/%E5%91%8A%E5%88%AB%E5%9C%86%E8%88%9E%E6%9B%B2/" class="list-group-item list-group-item-action">
-          <span class="category-post">《告别圆舞曲》摘抄</span>
-        </a>
-      
-    
-      
-      
-        <a href="/categories/Extract/" class="list-group-item list-group-item-action">
-          <span class="category-post">More...</span>
-        </a>
-        
-  </div>
-
-        
-      </div>
-    </div>
-  
-</div>
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -400,9 +378,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 
